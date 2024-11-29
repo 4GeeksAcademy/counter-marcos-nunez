@@ -1,19 +1,24 @@
+import Alert from "react-bootstrap/Alert";
 import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
 
 const HomePageContent = () => {
   return (
-    <Card style={{ width: "18rem" }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
-      <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
-      </Card.Body>
-    </Card>
+    <div
+      style={{ display: "flex", justifyContent: "center", marginTop: "25px" }}
+    >
+      <Alert variant="secondary" style={{ width: "1300px" }}>
+        <h1 style={{ marginTop: "25px" }}>A Warm Welcome!</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ipsa
+          cupiditate eveniet et quia, dolor velit animi, sed eligendi natus
+          illum amet! Inventore minus repellendus adipisci incidunt corrupti
+          quaerat ad.
+        </p>
+        <Button variant="primary" style={{ marginBottom: "40px" }}>
+          Call to action!
+        </Button>
+      </Alert>
+    </div>
   );
 };
 
